@@ -12,7 +12,7 @@ const Chains = () => {
 
     const vendorFirmHandler = async()=>{
             try {
-                    const response = await fetch(`${API_URL}/vendor/all-vendors?order=desc`)
+                    const response = await fetch(`${API_URL}/vendor/all-vendors?order=desc&limit=17`)
                     const newData = await response.json()
                         setVendorData(newData);
                         console.log("this is api Data ", newData)
